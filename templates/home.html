@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Random WIKIPEDIA Articles</title>
+</head>
+<body>
+    <h1>10 Random Articles from the WIKIPEDIA API<h1>
+    <ol>
+        <a href="#" id="t1"><li>{{artTitles[0][1]}}</li></a>
+        <a href="#" id="t2"><li>{{artTitles[1][1]}}</li></a>
+        <a href="#" id="t3"><li>{{artTitles[2][1]}}</li></a>
+        <a href="#" id="t4"><li>{{artTitles[3][1]}}</li></a>
+        <a href="#" id="t5"><li>{{artTitles[4][1]}}</li></a>
+        <a href="#" id="t6"><li>{{artTitles[5][1]}}</li></a>
+        <a href="#" id="t7"><li>{{artTitles[6][1]}}</li></a>
+        <a href="#" id="t8"><li>{{artTitles[7][1]}}</li></a>
+        <a href="#" id="t9"><li>{{artTitles[8][1]}}</li></a>
+        <a href="#" id="t10"><li>{{artTitles[9][1]}}</li></a>
+      </ol>
+
+
+      <section id="0" style="display:none">
+        <h1>{{pagesDetails[0][1]}}<h1>
+            <h2>Summary</h2>
+            <p>{{pagesDetails[0][2]}}</p>
+            <li><img src={{pagesDetails[0][3]}} alt="image" width="700" height="600"></li>
+        </section>
+
+        <section id="1" style="display:none">
+            <h1>{{pagesDetails[1][1]}}<h1>
+                <h2>Summary</h2>
+                <p>{{pagesDetails[1][2]}}</p>
+                <li><img src={{pagesDetails[1][3]}} alt="image"></li>
+            </section>
+
+     <section id="2" style="display:none">
+            <h1>{{pagesDetails[2][1]}}<h1>
+                <h2>Summary</h2>
+                <p>{{pagesDetails[2][2]}}</p>
+                <li><img src={{pagesDetails[2][3]}} alt="image"></li>
+            </section>      
+            
+     <section id="3" style="display:none">
+            <h1>{{pagesDetails[3][1]}}<h1>
+                <h2>Summary</h2>
+                <p>{{pagesDetails[3][2]}}</p>
+                <li><img src={{pagesDetails[3][3]}} alt="image"></li>
+            </section>
+    
+    <section id="4" style="display:none">
+            <h1>{{pagesDetails[4][1]}}<h1>
+                <h2>Summary</h2>
+                <p>{{pagesDetails[4][2]}}</p>
+                <li><img src={{pagesDetails[4][3]}} alt="image"></li>
+            </section>
+
+    <section id="5" style="display:none">
+            <h1>{{pagesDetails[5][1]}}<h1>
+                <h2>Summary</h2>
+                <p>{{pagesDetails[5][2]}}</p>
+                <li><img src={{pagesDetails[5][3]}} alt="image"></li>
+            </section>
+
+      <section id="6" style="display:none">
+        <h1>{{pagesDetails[6][1]}}<h1>
+            <h2>Summary</h2>
+            <p>{{pagesDetails[6][2]}}</p>
+            <li><img src={{pagesDetails[6][3]}} alt="image"></li>
+        </section>
+
+        <section id="7" style="display:none">
+            <h1>{{pagesDetails[7][1]}}<h1>
+                <h2>Summary</h2>
+                <p>{{pagesDetails[7][2]}}</p>
+                <li><img src={{pagesDetails[7][3]}} alt="image"></li>
+            </section>
+        
+        <section id="8" style="display:none">
+            <h1>{{pagesDetails[8][1]}}<h1>
+                <h2>Summary</h2>
+                <p>{{pagesDetails[8][2]}}</p>
+                <li><img src={{pagesDetails[8][3]}} alt="image"></li>
+            </section>
+
+        <section id="9" style="display:none">
+            <h1>{{pagesDetails[9][1]}}<h1>
+                <h2>Summary</h2>
+                <p>{{pagesDetails[9][2]}}</p>
+                <li><img src={{pagesDetails[9][3]}} alt="image"></li>
+            </section>
+
+
+      <!-- <ol>
+        {% for i in artTitles %}
+        <li>{{i[1]}}</li>
+        {% endfor %}
+      </ol> -->
+
+<script>
+    document.getElementById('t1').onclick = function() {
+    document.getElementById('0').style.display = '';
+    }
+
+    document.getElementById('t2').onclick = function() {
+    document.getElementById('1').style.display = '';
+    }
+
+    document.getElementById('t3').onclick = function() {
+    document.getElementById('2').style.display = '';
+    }
+
+    document.getElementById('t4').onclick = function() {
+    document.getElementById('3').style.display = '';
+    }
+
+    document.getElementById('t5').onclick = function() {
+    document.getElementById('4').style.display = '';
+    }
+
+    document.getElementById('t6').onclick = function() {
+    document.getElementById('5').style.display = '';
+    }
+
+    document.getElementById('t7').onclick = function() {
+    document.getElementById('6').style.display = '';
+    }
+
+    document.getElementById('t8').onclick = function() {
+    document.getElementById('7').style.display = '';
+    }
+    
+    document.getElementById('t9').onclick = function() {
+    document.getElementById('8').style.display = '';
+    }
+    
+    document.getElementById('t10').onclick = function() {
+    document.getElementById('9').style.display = '';
+    }
+   
+</script>
+</body>
+</html>
