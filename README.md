@@ -52,3 +52,4 @@ A RESTful API by Python and Flask to fetch 10 random articles from Wikipedia-api
 - api endpoint: http://127.0.0.1:5000/titles
 
 ## Sample fetched data
+[A sample data retrieved by Restapi GET method to display articles with title, summary and a photo](images/Screenshot from 2022-06-05 13-32-41.png)
