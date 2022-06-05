@@ -11,7 +11,7 @@ A RESTful API by Python and Flask to fetch 10 random articles from Wikipedia-api
 - File home.html preview the data to the user (html/js)
 
 ## Config
-- pip install wikipedia-api
+- pip install wikipedia
 - pip install flask
 - pip install virtualenv
 
@@ -30,3 +30,15 @@ A RESTful API by Python and Flask to fetch 10 random articles from Wikipedia-api
 - html/js
 
 ## How to run
+### Without Docker in local environment:
+- $ pip install wikipedia
+- $ pip install flask
+- $ flask run
+- api endpoint: http://127.0.0.1:5000/titles
+
+### Run with Docker
+- $ Sudo docker build -t [IMAGENAME] . 
+- $ sudo docker run -t -dp 127.0.0.1:5000:5000 [IMAGENAME] sleep infinity
+- $ sudo docker exec -u 0 -it [CONTAINERNAME] /bin/bash
+- $ flask run --host=0.0.0.0
+- api endpoint: http://127.0.0.1:5000/titles
