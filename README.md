@@ -1,7 +1,9 @@
 # wikipediaAPI
+
 A RESTful API by Python and Flask to fetch 10 random articles from Wikipedia-api and store them in sqlite db. Then fetch them to the browser with details of each article e.g., title, first paragraph and an image.
 
 ## How It Works
+
 - File [db.py](./db.py) is responsible to:
   - fetch 10 random articles's titles from wikipedia-api
   - insert 10 random wikipedia titles into db
@@ -11,16 +13,19 @@ A RESTful API by Python and Flask to fetch 10 random articles from Wikipedia-api
 - File [home.html](templates/home.html) preview the data to the user (html/js)
 
 ## Config
-- ```pip install wikipedia```
-- ```pip install flask```
-- ```pip install virtualenv```
+
+- `pip install wikipedia`
+- `pip install flask`
+- `pip install virtualenv`
 
 ## Database
+
 - Sqlite3
-- fetched data stored to the wiki-api.db file 
+- fetched data stored to the wiki-api.db file
 
 ## Dependencies
-- Python3 
+
+- Python3
 - Sqlite3
 - Requests
 - Flask
@@ -30,18 +35,20 @@ A RESTful API by Python and Flask to fetch 10 random articles from Wikipedia-api
 - html/js
 
 ## How to run
+
 ### Without Docker (in local environment):
-- ```$ pip install wikipedia```
-- ```$ pip install flask```
-- ```$ flask run```
+
+- `$ pip install wikipedia`
+- `$ pip install flask`
+- `$ flask run`
 - api endpoint: http://127.0.0.1:5000/titles
 
 ### With Docker:
-- ```$ Sudo docker build -t [IMAGENAME] .``` 
-- ```$ sudo docker run -t -dp 127.0.0.1:5000:5000 [IMAGENAME] sleep infinity```
-- ```$ sudo docker exec -u 0 -it [CONTAINERNAME] /bin/bash```
-- ```$ flask run --host=0.0.0.0```
+
+- `$ Sudo docker build -t [IMAGENAME] .`
+- `$ sudo docker run -t -dp 127.0.0.1:5000:5000 [IMAGENAME] sleep infinity`
+- `$ sudo docker exec -u 0 -it [CONTAINERNAME] /bin/bash`
+- `$ flask run --host=0.0.0.0`
 - api endpoint: http://127.0.0.1:5000/titles
 
 ## Sample fetched data
-

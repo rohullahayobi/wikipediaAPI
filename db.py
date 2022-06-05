@@ -236,7 +236,7 @@ title2 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t2)
 sumjson = sumuri.json()
 summary2 = sumjson["extract"]
-# image2 = t.images[0]
+image2 = t.images[0]
 
 #Title 3
 t = wikipedia.page(t3)
@@ -244,7 +244,7 @@ title3 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t3)
 sumjson = sumuri.json()
 summary3 = sumjson["extract"]
-# image3 = t.images[0]
+image3 = t.images[0]
 
 #Title 4
 t = wikipedia.page(t4)
@@ -252,7 +252,7 @@ title4 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t4)
 sumjson = sumuri.json()
 summary4 = sumjson["extract"]
-# image4 = t.images[0]
+image4 = t.images[0]
 
 #Title 5
 t = wikipedia.page(t5)
@@ -260,7 +260,7 @@ title5 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t5)
 sumjson = sumuri.json()
 summary5 = sumjson["extract"]
-# image5 = t.images[0]
+image5 = t.images[0]
 
 #Title 6
 t = wikipedia.page(t6)
@@ -268,7 +268,7 @@ title6 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t6)
 sumjson = sumuri.json()
 summary6 = sumjson["extract"]
-# image6 = t.images[0]
+image6 = t.images[0]
 
 #Title 7
 t = wikipedia.page(t7)
@@ -276,7 +276,7 @@ title7 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t7)
 sumjson = sumuri.json()
 summary7 = sumjson["extract"]
-# image7 = t.images[0]
+image7 = t.images[0]
 
 #Title 8
 t = wikipedia.page(t8)
@@ -284,7 +284,7 @@ title8 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t8)
 sumjson = sumuri.json()
 summary8 = sumjson["extract"]
-# image8 = t.images[0]
+image8 = t.images[0]
 
 #Title 9
 t = wikipedia.page(t9)
@@ -292,7 +292,7 @@ title9 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t9)
 sumjson = sumuri.json()
 summary9 = sumjson["extract"]
-# image9 = t.images[0]
+image9 = t.images[0]
 
 # Title 10
 t = wikipedia.page(t10)
@@ -300,19 +300,19 @@ title10 = t.title
 sumuri = requests.get("https://en.wikipedia.org/api/rest_v1/page/summary/%s" % t10)
 sumjson = sumuri.json()
 summary10 = sumjson["extract"]
-# image10 = t.images[0]
+image10 = t.images[0]
 
-#insert details into database
+# insert details into database
 insertWikiPediaDataIntoPagesTable(id1, title1, summary1, image1)
-insertWikiPediaDataIntoPagesTable(id2, title2, summary2, title1)
-insertWikiPediaDataIntoPagesTable(id3, title3, summary3, title1)
-insertWikiPediaDataIntoPagesTable(id4, title4, summary4, title1)
-insertWikiPediaDataIntoPagesTable(id5, title5, summary5, title1)
-insertWikiPediaDataIntoPagesTable(id6, title6, summary6, title1)
-insertWikiPediaDataIntoPagesTable(id7, title7, summary7, title1)
-insertWikiPediaDataIntoPagesTable(id8, title8, summary8, title1)
-insertWikiPediaDataIntoPagesTable(id9, title9, summary9, title1)
-insertWikiPediaDataIntoPagesTable(id10, title10, summary10, title1)
+insertWikiPediaDataIntoPagesTable(id2, title2, summary2, image2)
+insertWikiPediaDataIntoPagesTable(id3, title3, summary3, image3)
+insertWikiPediaDataIntoPagesTable(id4, title4, summary4, image4)
+insertWikiPediaDataIntoPagesTable(id5, title5, summary5, image5)
+insertWikiPediaDataIntoPagesTable(id6, title6, summary6, image6)
+insertWikiPediaDataIntoPagesTable(id7, title7, summary7, image7)
+insertWikiPediaDataIntoPagesTable(id8, title8, summary8, image8)
+insertWikiPediaDataIntoPagesTable(id9, title9, summary9, image9)
+insertWikiPediaDataIntoPagesTable(id10, title10, summary10, image10)
 
 
 
