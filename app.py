@@ -12,10 +12,6 @@ app = Flask(__name__)
 def viewTitles():
     return render_template("home.html", artTitles = fetchTitlesTableData(), pagesDetails = fetchPagesTableData())
 
-# @app.route('/pages', methods=['GET'])
-# def viewPagesById():
-#     return render_template("pages.html", pagesDetails = fetchPagesTableData())
-
 
 
 if __name__ == '__main__':

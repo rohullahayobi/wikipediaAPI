@@ -52,10 +52,11 @@ A RESTful API by Python and Flask to fetch 10 random articles from Wikipedia-api
 - api endpoint: http://127.0.0.1:5000/titles
 
 ## Sample fetched data
+
 <img src="images/apiImage.png" width="500" height="300">
 A sample data retrieved by Restapi GET method to display articles with title, summary and a photo
 
 ## IMPORTANT
-When you run the application, 10 random article titles will be fetched and stored into the sqlite however sometimes details of articles may not be fethed from WIKIPEDIA api. This is because not all wikipedia articles has photo. Therefore causes errors while running the application. 
-If this is happened please patiently re-run the application until all articles with enough data is fetched.
 
+When you run the application, 10 random article titles will be fetched and stored into the sqlite however sometimes details of articles may not be fethed from WIKIPEDIA api. This is maybe because not all wikipedia articles has photo. Therefore causes errors while running the application.
+If this happens please patiently re-run the application until all articles with enough data is fetched.
